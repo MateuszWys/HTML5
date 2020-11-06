@@ -1,14 +1,20 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" href="zad5.css">
 </head>
 <body>
-	<img id="obrazek" style="top: 0px; left: 0px; width: 70%; height: 70%" src="wir.jpeg">
-
-<script>
+	<img id="obrazek" style="margin:0% 0% 0% 15%; width: 70%; height: 100%" src="wir.jpeg">
+	<div id="circle"></div>
+	<button onclick="moveme();">click me</button>
+	<script>
 function moveme()
 {
 
+	alert(document.getElementById("circle"));
+    document.getElementById("circle").style.transition = "margin 2s, transform 2s 2s";  
+	document.getElementById("circle").style.margin = "15% 0% 0% 33%";	
+	document.getElementById("circle").style.transform = "rotate(3600deg), translate(400px, 100px)";
 }
 </script>
 </body>
