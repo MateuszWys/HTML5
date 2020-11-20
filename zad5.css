@@ -3,43 +3,29 @@ button {
     top: 0;
     right: 0;
 }
-.grassPosition{
-		position:absolute;
-		bottom:0;
-		width:100%;
-		height:60px;		
-		background:#33A925;
-	}
-.circlePosition{
-	position: fixed;
-	top: 0;
-	left: 0;
- }
- .circle {
-	width: 80px;
-	height: 80px;
-	background-color: #A9FFFF;
-	border-radius: 50%;
-	display: inline-block;
-}
-.spiralCircle {
-    left: 510px;
-    position: absolute;
-    top: 400px;
-    -webkit-animation: spiralCircle 60s linear forwards;
+.bouncing-ball {
+    width: 100px;
+    height: 100px;
+    background: black;
+
+    animation: bounce 3s, move 3s;
+
+    position:absolute;
+    bottom: 0;
+    left: 0;
 }
 
-@-webkit-keyframes spiralCircle {
-	0% {-webkit-transform: rotate(0deg) scale(1) translate(-520px,-410px) rotate(0deg); }
-    10%{-webkit-transform: rotate(360deg) scale(0.7) translate(-420px,-360px) rotate(-360deg);}
-    20%{-webkit-transform: rotate(720deg) scale(0.5) translate(-380px,-330px) rotate(-720deg);}
-    30%{-webkit-transform: rotate(1080deg) scale(0.3) translate(-340px,-300px) rotate(-1080deg);}
-	40%{-webkit-transform: rotate(1460deg) scale(0.2) translate(-290px,-260px) rotate(-1460deg);}
-    50%{-webkit-transform: rotate(1820deg) scale(0.1) translate(-290px,-260px) rotate(-1820deg);}
-	60%{-webkit-transform: rotate(2180deg) scale(0.09) translate(-200px,-180px) rotate(-2180deg);}
-	70%{-webkit-transform: rotate(2540deg) scale(0.08) translate(-160px,-100px) rotate(-2540deg);}
-	80%{-webkit-transform: rotate(2900deg) scale(0.07) translate(-80px, 0px) rotate(-2900deg);}
-	90%{-webkit-transform: rotate(3260deg) scale(0.06) translate(-40px, 0px) rotate(-3260deg);}
-	100%{-webkit-transform: rotate(3620deg) scale(0.05) translateX(0px) rotate(-3620deg); }
+@keyframes bounce{
+    100% {
+        left:80%;
+    }
+}
 
+@keyframes move {
+    50% {
+        bottom: 20%;
+    }
+    100% {
+        bottom: 0;
+    }
 }
