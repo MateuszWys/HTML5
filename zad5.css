@@ -1,14 +1,17 @@
 button {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
 }
-.imgPosition{
-	position: relative;	
-	display: inline-block;
-}
+.grassPosition{
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:60px;		
+		background:#33A925;
+	}
 .circlePosition{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
  }
