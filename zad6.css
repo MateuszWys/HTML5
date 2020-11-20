@@ -1,0 +1,50 @@
+button {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.grass{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:100px;		/* Wysokość stopki */
+	background:green;
+}
+}
+.ballPosition{
+	position:absolute;
+	bottom: 0;
+    left: 0;
+}
+.ball {
+    width: 100px;
+    height: 100px;
+	background-color: black;
+   	border-radius: 50%;
+}
+
+.bounceBall{
+	position: absolute
+	-webkit-animation: bounce 3s, move 3s;
+}
+
+@keyframes bounce{
+    10% {
+        left:30%;
+    }
+	20% {
+        left:60%;
+    }
+	40% {
+        left:90%;
+    }
+}
+
+@keyframes move {
+    50% {
+        bottom: 20%;
+    }
+    100% {
+        bottom: 0;
+    }
+}

@@ -1,15 +1,20 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	<link rel="stylesheet" href="zad5.css">
+	<link rel="stylesheet" href="zad6.css">
 </head>
 <body>
-<div class="bouncing-ball"></div>
+<div>
+	<div class="grass"></div>
+	<div id="ballPosition" class="ballPosition">
+		<span id="ball" class="ball"></span>
+	</div>
+</div>  
 <button onclick="moveme();">click me</button>
 	<script>
 function moveme()
 {
-    document.getElementById("bouncing-ball").className= 'bouncing-ball';
+    document.getElementById("ballPosition").className= 'bounceBall';
 }
 </script>
 </body>
