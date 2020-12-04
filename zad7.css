@@ -6,33 +6,45 @@
     height: 50px;
     border-radius: 100%;
     background-color: black;
-	-webkit-animation: bounce 1.2s linear alternate infinite, move 10s linear alternate infinite;
+	-webkit-animation: bounce 1.2s ease-out alternate infinite, move 10s linear alternate infinite;
 }
 .person {
     background-color: green;
-    position: fixed;
+    position: absolute;
     width: 100px;
     height: 300px;
-	transform: translate(10px, 200px);
+	transform: translate(1200px, 300px);
 }
 .stick {
     background-color: brown;
-    position: fixed;
+    position: absolute;
     width: 10px;
     height: 200px;
 	transform: translate(77vw, 200px);
+	-webkit-animation: hit 5s linear alternate infinite;
 }
 @keyframes bounce {
-    0%   {transform: translate3d(0, 15%, 0);}
-
-    100% {transform: translate3d(0, -100%, 0);}
+    0%   {transform: translate3d(0, 0%, 100%);}
+    100% {transform: translate3d(0, -100%, 100%);}
   }
-
+@keyframes hit {
+    0%	{transform: rotate(-45deg);}
+    100% {transform: rotate(0deg);}
+  }
+  
 @keyframes move {
     0% {
-        left: 10%;
+        left: 5%;
     }
     100% {
         left: calc(75vw - 10px);
+    }
+}
+@keyframes moveStick {
+    0% {
+        left: 20%;
+    }
+    100% {
+        left:30vw;
     }
 }
