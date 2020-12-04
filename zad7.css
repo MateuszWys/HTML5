@@ -21,11 +21,14 @@
     width: 10px;
     height: 200px;
 	transform: translate(77vw, 200px);
-	-webkit-animation: moveStick, hit;
+	-webkit-animation: hit 15s linear alternate infinite;
 }
 @keyframes hit {
-    0%	{transform:translate(0deg);}
-    100% {transform:translate(45deg);}
+    0%	{right: 20%;
+	transform: translate(77vw, 200px);
+		 transform:rotate(0deg);}
+    100% {right: 20%;
+		  transform:rotate(45deg);}
   }
   
 @keyframes move {
@@ -36,7 +39,3 @@
         left: calc(75vw - 10px);
     }
 }
-@keyframes moveStick {
-    0%	{right: 90%;}
-    100% {right: 90%;}
-  }
