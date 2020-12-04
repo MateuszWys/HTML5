@@ -6,14 +6,14 @@
     height: 50px;
     border-radius: 100%;
     background-color: black;
-	-webkit-animation: bounce 1.2s ease-out alternate infinite, move 10s linear alternate infinite;
+	-webkit-animation: move 10s linear alternate infinite;
 }
 .person {
     background-color: green;
     position: absolute;
     width: 100px;
     height: 300px;
-	transform: translate(1200px, 300px);
+	transform: translate(10px, 300px);
 }
 .stick {
     background-color: brown;
@@ -21,15 +21,11 @@
     width: 10px;
     height: 200px;
 	transform: translate(77vw, 200px);
-	-webkit-animation: hit 5s linear alternate infinite;
+	-webkit-animation: moveStick, hit;
 }
-@keyframes bounce {
-    0%   {transform: translate3d(0, 0%, 100%);}
-    100% {transform: translate3d(0, -100%, 100%);}
-  }
 @keyframes hit {
-    0%	{transform: rotate(-45deg);}
-    100% {transform: rotate(0deg);}
+    0%	{transform:translate(0deg);}
+    100% {transform:translate(45deg);}
   }
   
 @keyframes move {
@@ -41,10 +37,6 @@
     }
 }
 @keyframes moveStick {
-    0% {
-        left: 20%;
-    }
-    100% {
-        left:30vw;
-    }
-}
+    0%	{right: 90%;}
+    100% {right: 90%;}
+  }
