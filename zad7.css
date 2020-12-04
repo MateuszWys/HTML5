@@ -24,18 +24,23 @@
 	-webkit-animation: hit 15s linear alternate infinite;
 }
 @keyframes hit {
-    0%	{right: 20%;
-	transform: translate(77vw, 200px);
-		 transform:rotate(0deg);}
-    100% {right: 20%;
-		  transform:rotate(45deg);}
+    0%	{
+			right: 20%;
+			bottom: 40%;
+			transform:rotate(0deg);
+	}
+    100% {
+			right: 20%;
+			bottom:40%;
+			transform:rotate(45deg);
+	}
   }
   
 @keyframes move {
     0% {
         left: 5%;
     }
-    100% {
+	100% {
         left: calc(75vw - 10px);
     }
 }
