@@ -4,8 +4,22 @@
 	<link rel="stylesheet" href="zad7.css">
 </head>
 <body>
+<div>
+	<div class="grass"></div>
 	<div class="person"></div>
-	<div class="bouncing-ball"></div>
-	<div class="stick"></div>
+    <div id="ballContainer" class="ballContainer">
+        <div class="ball"></div>
+    </div>
+    <div id="stickContainer" class="stickContainer">
+         <div class="stick"></div>
+    </div>
+</div>
 </body>
+<button onclick='moveme();'>click me</button>
+<script>
+    function moveme() {
+        document.getElementById("ballContainer").className = "move";
+        document.getElementById("stickContainer").className = "hit";
+    }
+</script>
 </html>
