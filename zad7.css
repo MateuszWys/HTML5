@@ -46,19 +46,19 @@
 .hit {
 	right: 20%;
 	bottom: 20%;
-	transform: rotate(15deg);
+	transform: rotate(-15deg);
 	position: absolute;
-	-webkit-animation: hit 4s linear alternate;
+	-webkit-animation: hit 5s linear alternate;
 }
 @keyframes hit {
     0%	{
 			transform:rotate(0deg);
 	}
     50% {
-			transform:rotate(-30deg);
+			transform:rotate(30deg);
 	}
 	100% {
-			transform:rotate(15deg);
+			transform:rotate(-15deg);
 	}
  }
   
@@ -67,7 +67,7 @@
             transform: translateX(0vw);
     }
     70%  {   
-			transform: translate3d(69vw, 10vw,0);
+			transform: translate3d(69vw, 3vw,0);
     }
     100% {  
             transform: translate3d(-70vw,-35vw,0);
