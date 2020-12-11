@@ -45,6 +45,7 @@
 .hit {
 	right: 20%;
 	bottom: 20%;
+	transform: rotate(-15deg);
 	position: absolute;
 	-webkit-animation: hit 5s linear alternate;
 }
