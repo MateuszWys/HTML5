@@ -11,14 +11,14 @@
     background-color: blue;
     position: absolute;
     width: 100px;
-    height: 307px;
-	transform: translate(10px, 300px);
+    height: 300px;
+	transform: translate(10px, 310px);
 }
 
 .ballContainer {
 	position: absolute;	
 	left: 7.5%;
- 	bottom: calc(8vh + 250px);
+ 	bottom: calc(10vh + 250px);
 }
 .ball {
     width: 50px;
@@ -27,7 +27,7 @@
     background-color: black;
 }
 .move {
-	bottom: calc(8vh + 250px);
+	bottom: calc(10vh + 250px);
 	left: 7.5%;
 	position: absolute;
 	-webkit-animation: move 5s linear alternate;
@@ -54,7 +54,7 @@
     0%	{
 			transform:rotate(0deg);
 	}
-    70% {
+    50% {
 			transform:rotate(-30deg);
 	}
 	100% {
@@ -67,9 +67,9 @@
             transform: translateX(0vw);
     }
     70%  {   
-			transform: translate3d(69vw,9vw,0);
+			transform: translate3d(69vw, 10vw,0);
     }
     100% {  
-            transform: translate3d(-70vw,-40vw,0);
+            transform: translate3d(-70vw,-35vw,0);
     }
 }
