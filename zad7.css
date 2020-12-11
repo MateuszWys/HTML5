@@ -30,30 +30,31 @@
 	bottom: calc(8vh + 250px);
 	left: 7.5%;
 	position: absolute;
-	-webkit-animation: move 8s linear alternate;
+	-webkit-animation: move 5s linear alternate;
 }
 
 .stickContainer {
 	position: absolute;
-	transform: translate(77vw, 200px);
+	right: 20%;
+	bottom: 20%;
 }
 .stick {
     background-color: brown;
     width: 10px;
-    height: 230px;
+    height: 200px;
 }
 .hit {
 	right: 20%;
 	bottom: 20%;
 	transform: rotate(15deg);
 	position: absolute;
-	-webkit-animation: hit 5s linear alternate;
+	-webkit-animation: hit 4s linear alternate;
 }
 @keyframes hit {
     0%	{
 			transform:rotate(0deg);
 	}
-    50% {
+    70% {
 			transform:rotate(-30deg);
 	}
 	100% {
@@ -65,10 +66,10 @@
 	0%  {   
             transform: translateX(0vw);
     }
-    50%  {   
-			transform: translate3d(69vw,7vw,0);
+    70%  {   
+			transform: translate3d(69vw,9vw,0);
     }
     100% {  
-            transform: translate3d(-70vw,-70vw,0);
+            transform: translate3d(-70vw,-40vw,0);
     }
 }
