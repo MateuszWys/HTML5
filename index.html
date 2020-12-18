@@ -8,23 +8,20 @@
     <div id="carContainer" class="carContainer">
 		<div class="car"></div>
 	</div>
-	<div class="person"></div>
-    <div id="wheel_1Container" class="wheelContainer">
+
+    <div id="wheel_1Container" class="wheel_1Container">
         <div class="wheel_1"></div>
     </div>
-	<div id="wheel_2Container" class="wheelContainer">
+	<div id="wheel_2Container" class="wheel_2Container">
 			<div class="wheel_2"></div>
 	</div>
-    <div id="stickContainer" class="stickContainer">
-         <div class="stick"></div>
-    </div>
 </div>
 </body>
 <button onclick='moveme();'>click me</button>
 <script>
     function moveme() {
-        document.getElementById("wheel_1ContainerContainer").className = "move";
-		document.getElementById("wheel_2ContainerContainer").className = "move";
+        document.getElementById("wheel_1Container").className = "move";
+		document.getElementById("wheel_2Container").className = "move";
         document.getElementById("carContainer").className = "hit";
     }
 </script>
