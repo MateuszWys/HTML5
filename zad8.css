@@ -60,11 +60,12 @@
 	bottom: 20%;
 	transform: rotate(-15deg);
 	position: absolute;
-	-webkit-animation: hit 5s linear alternate;
+	-webkit-animation: hit 10s;
 }
 @keyframes hit {
     0%	{
 			transform:rotate(0deg);
+			
 	}
     50% {
 			transform:rotate(30deg);
@@ -78,10 +79,10 @@
 	0%  {   
             transform: translateX(0vw);
     }
-    70%  {   
-			transform: translate3d(100w,100w ,0);
+    30%  {   
+			transform: translateX(85vw);
     }
     100% {  
-            transform: translateY(-90vw);
+			transform: translateY(-20vw);
     }
 }
