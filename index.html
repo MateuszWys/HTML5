@@ -4,25 +4,27 @@
 	<link rel="stylesheet" href="zad8.css">
 </head>
 <body>
-<div>
+<div id="truck" class="truck" >
     <div id="carContainer" class="carContainer">
-		<div class="car"></div>
-	</div>
-
+		<div class="car"> </div>
     <div id="wheel_1Container" class="wheel_1Container">
         <div class="wheel_1"></div>
     </div>
 	<div id="wheel_2Container" class="wheel_2Container">
-			<div class="wheel_2"></div>
+		<div class="wheel_2"></div>
 	</div>
+	<div id="trailerContainer" class="trailerContainer">
+		<div class="trailer"></div>
+	</div>
+	</div>
+
 </div>
 </body>
 <button onclick='moveme();'>click me</button>
 <script>
     function moveme() {
-        document.getElementById("wheel_1Container").className = "move";
-		document.getElementById("wheel_2Container").className = "move";
-        document.getElementById("carContainer").className = "hit";
+        document.getElementById("truck").className = "move";
+		document.getElementById("trailerContainer").className = "hit";
     }
 </script>
 </html>
