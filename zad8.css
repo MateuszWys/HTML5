@@ -1,15 +1,12 @@
 .carContainer {
+	background-color: blue;
 	position: absolute;
-	right: 20%;
-	bottom: 20%;
+	bottom: 10%
+
 }
 .car {
-    background-color: green;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
 }
 
 .trailer {
@@ -20,10 +17,14 @@
 	transform: translate(10px, 310px);
 }
 
-.ballContainer {
+.wheel_1Container {
 	position: absolute;	
-	left: 7.5%;
- 	bottom: calc(10vh + 250px);
+	
+	bottom: 5%
+}
+.wheel_2Container {
+	position: absolute;	
+	bottom: 5%
 }
 .wheel_1 {
     width: 50px;
@@ -34,12 +35,12 @@
 .wheel_2{
     width: 50px;
     height: 50px;
+	left:75%;
     border-radius: 100%;
     background-color: black;
 }
 .move {
-	bottom: calc(10vh + 250px);
-	left: 7.5%;
+
 	position: absolute;
 	-webkit-animation: move 5s linear alternate;
 }
