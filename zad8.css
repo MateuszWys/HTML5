@@ -52,7 +52,7 @@
 }
 .hit {
 	position: absolute;
-	-webkit-animation: hit 10s;
+	-webkit-animation: hit -30s;
 	bottom: 100%
 
 }
