@@ -1,0 +1,75 @@
+.grass {
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+}
+
+.person {
+    background-color: blue;
+    position: absolute;
+    width: 100px;
+    height: 300px;
+	transform: translate(10px, 310px);
+}
+
+.ballContainer {
+	position: absolute;	
+	left: 7.5%;
+ 	bottom: calc(10vh + 250px);
+}
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+}
+.move {
+	bottom: calc(10vh + 250px);
+	left: 7.5%;
+	position: absolute;
+	-webkit-animation: move 5s linear alternate;
+}
+
+.stickContainer {
+	position: absolute;
+	right: 20%;
+	bottom: 20%;
+}
+.stick {
+    background-color: brown;
+    width: 10px;
+    height: 200px;
+}
+.hit {
+	right: 20%;
+	bottom: 20%;
+	transform: rotate(-15deg);
+	position: absolute;
+	-webkit-animation: hit 5s linear alternate;
+}
+@keyframes hit {
+    0%	{
+			transform:rotate(0deg);
+	}
+    50% {
+			transform:rotate(30deg);
+	}
+	100% {
+			transform:rotate(-15deg);
+	}
+ }
+  
+@keyframes move {
+	0%  {   
+            transform: translateX(0vw);
+    }
+    70%  {   
+			transform: translate3d(69vw, 3vw,0);
+    }
+    100% {  
+            transform: translate3d(-70vw,-35vw,0);
+    }
+}
