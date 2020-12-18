@@ -1,4 +1,9 @@
-.grass {
+.carContainer {
+	position: absolute;
+	right: 20%;
+	bottom: 20%;
+}
+.car {
     background-color: green;
     position: fixed;
     bottom: 0;
@@ -7,7 +12,7 @@
     height: 15vh;
 }
 
-.person {
+.trailer {
     background-color: blue;
     position: absolute;
     width: 100px;
@@ -20,7 +25,13 @@
 	left: 7.5%;
  	bottom: calc(10vh + 250px);
 }
-.ball {
+.wheel_1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+}
+.wheel_2{
     width: 50px;
     height: 50px;
     border-radius: 100%;
