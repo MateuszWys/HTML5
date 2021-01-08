@@ -34,9 +34,9 @@
     border-radius: 100%;
     background-color: black;
 }
-.Car_move {
+.car_move {
 	position: absolute;
-	-webkit-animation: Car_move 10s linear alternate;
+	-webkit-animation: car_move 10s linear alternate;
 	bottom:57.5%;
 	left:10%;
 }
@@ -56,6 +56,26 @@
 	-webkit-animation: trailer_animation 20s linear forwards;
 	bottom: 85%
 }
+.packageContainer{
+	position:absolute;
+	background-color: grey;
+	visibility: visible;
+	z-index: 2;
+	left:15%;
+	bottom: 105%;
+}
+.package{
+	width: 50px;
+    height: 50px;	
+}
+.package_animation{
+	z-index: 2;
+	position: absolute;
+	visibility: visible;
+	-webkit-animation: package_animation 20s linear forwards;
+	left:15%;
+	bottom: 105%;
+}
 @keyframes trailer_animation {
     0%	{
 			transform:rotate(0deg);
@@ -72,7 +92,7 @@
 	}
  }
   
-@keyframes Car_move {
+@keyframes car_move {
 	0%  {   
             transform: translateX(0vw);
 			bottom: 5%;
@@ -85,4 +105,27 @@
 			transform: translateY(-20vw);
 			bottom: 15%;
     }
+}
+@keyframes package_animation {
+      0% {
+          transform: rotate3d(0, 0, 0, 0deg);
+          bottom: 14vh;
+          left: 2vw;
+      }
+      25% {
+          transform: rotate3d(0, 0, 0, 0deg);
+          bottom: 15vh;
+          left: 70vw;
+      }
+      50% {
+          transform: rotate3d(0, 0, 0, 0deg);
+          bottom: 65vh;
+          left: 16vw;
+      }
+      100% {
+          bottom: 64vh;
+          left: 15vw;
+          transform-origin: -1vh 4vw;
+          transform: rotate3d(0, 0, 1, -60deg);
+      }
 }

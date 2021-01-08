@@ -16,15 +16,18 @@
 	<div id="trailerContainer" class="trailerContainer">
 		<div class="trailer"></div>
 	</div>
+	<div id="packageContainer" class="packageContainer">
+		<div class="package"> </div>
 	</div>
-
+	</div>
 </div>
 </body>
 <button onclick='moveme();'>click me</button>
 <script>
     function moveme() {
-        document.getElementById("truck").className = "move";
-		document.getElementById("trailerContainer").className = "hit";
+        document.getElementById("truck").className = "car_move";
+		document.getElementById("trailerContainer").className = "trailer_animation";
+		document.getElementById("packageContainer").className = "package_animation";
     }
 </script>
 </html>
