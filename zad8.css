@@ -55,20 +55,24 @@
 	-webkit-animation: trailer_animation 20s linear forwards;
 	bottom: 85%
 }
-
+.packageCointainer{
+	position:absolute;
+	bottom:150%;
+}
 .package{
+	background-color: grey;
+	left:30%;
 	width: 50px;
     height: 50px;	
-		position:absolute;
-	background-color: grey;
-	left:15%;
-	bottom: 105%;
 }
 .package_animation{
 	position: absolute;
+	width: 50px;
+    height: 50px;	
+	visibility: visible;
 	-webkit-animation: package_animation 20s;
-	left:15%;
-	bottom: 105%;
+	left:30%;
+	bottom: 100%;
 }
 @keyframes trailer_animation {
     0%	{
