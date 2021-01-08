@@ -49,30 +49,24 @@
     background-color: brown;
     width: 10vw;
     height: 2vh;
-
 }
 .trailer_animation {
 	position: absolute;
 	-webkit-animation: trailer_animation 20s linear forwards;
 	bottom: 85%
 }
-.packageContainer{
-	position:absolute;
-	background-color: grey;
-	visibility: visible;
-	z-index: 2;
-	left:15%;
-	bottom: 105%;
-}
+
 .package{
 	width: 50px;
     height: 50px;	
+		position:absolute;
+	background-color: grey;
+	left:15%;
+	bottom: 105%;
 }
 .package_animation{
-	z-index: 2;
 	position: absolute;
-	visibility: visible;
-	-webkit-animation: package_animation 20s linear forwards;
+	-webkit-animation: package_animation 20s;
 	left:15%;
 	bottom: 105%;
 }
@@ -106,26 +100,18 @@
 			bottom: 15%;
     }
 }
+
 @keyframes package_animation {
       0% {
-          transform: rotate3d(0, 0, 0, 0deg);
-          bottom: 14vh;
-          left: 2vw;
+
       }
       25% {
-          transform: rotate3d(0, 0, 0, 0deg);
-          bottom: 15vh;
-          left: 70vw;
+
       }
       50% {
-          transform: rotate3d(0, 0, 0, 0deg);
-          bottom: 65vh;
-          left: 16vw;
+
       }
       100% {
-          bottom: 64vh;
-          left: 15vw;
-          transform-origin: -1vh 4vw;
-          transform: rotate3d(0, 0, 1, -60deg);
+
       }
 }
