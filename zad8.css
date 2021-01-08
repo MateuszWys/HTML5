@@ -38,21 +38,24 @@
 	position: absolute;
 	left: 7.5%;
 	-webkit-animation: move 10s linear alternate;
-	bottom:60%
+	bottom:57.5%
 }
 
 .trailerContainer {
 	position: absolute;
 	bottom: 100%;
+	left: -30%;
 }
 .trailer {
     background-color: brown;
     width: 10vw;
     height: 2vh;
+
 }
 .hit {
 	position: absolute;
-	-webkit-animation: hit -30s;
+	left: -30%;
+	-webkit-animation: hit 20s linear forwards;
 	bottom: 100%
 
 }
@@ -60,11 +63,14 @@
     0%	{
 			transform:rotate(0deg);
 	}
+	25% {
+			transform:rotate(0deg);
+	}
     50% {
-			transform:rotate(-30deg);
+			transform:rotate(0deg);
 	}
 	100% {
-			transform:rotate(0deg);
+			transform:rotate(-30deg);
 	}
  }
   
