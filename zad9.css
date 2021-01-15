@@ -1,0 +1,14 @@
+.imgPosition{
+	position: relative;	
+	display: inline-block;
+}
+.jajkoPosition{
+	position: absolute;
+	top: 0;
+	left: 0;
+ }
+ .jajko {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+}

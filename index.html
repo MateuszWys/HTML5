@@ -1,27 +1,17 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	<link rel="stylesheet" href="zad8.css">
+	<link rel="stylesheet" href="zad9.css">
 </head>
 <body>
-<div id="truck" class="truck" >
-    <div id="carContainer" class="carContainer">
-		<div class="car"> </div>
-    <div id="wheel_1Container" class="wheel_1Container">
-        <div class="wheel_1"></div>
-    </div>
-	<div id="wheel_2Container" class="wheel_2Container">
-		<div class="wheel_2"></div>
-	</div>
-	<div id="trailerContainer" class="trailerContainer">
-		<div class="trailer"></div>
-	</div>
-		<div class="package"> </div>
-	</div>
+<div class="imgPosition">
+	<img id="jajako" src="jajako.jpg">
+	<div id="jajkoPosition" class="jajkoPosition">
+			<span id="jajko" class="jajko">
 	</div>
 </div>
 </body>
-<button onclick='moveme();'>click me</button>
+<button onclick='moveme();'>dodaj do koszyka</button>
 <script>
     function moveme() {
         document.getElementById("truck").className = "car_move";
