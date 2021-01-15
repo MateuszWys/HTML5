@@ -1,14 +1,41 @@
 .imgPosition{
-	position: relative;	
-	display: inline-block;
+	top: 10%;
 }
+
+.kPosition{
+	position: absolute;	
+	top: 20%;
+	left: 80%;
+}
+
 .jajkoPosition{
-	position: absolute;
-	top: 0;
-	left: 0;
- }
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+	-webkit-animation: jajkomove 10s linear alternate infinite;
+}
+ 
  .jajko {
-	width: 80px;
-	height: 80px;
-	display: inline-block;
+	 height:50px;
+	 width: 50px;
+
+}
+
+
+
+.koszykPosition{
+	position: absolute;	
+
+}
+ .koszyk {
+}
+
+@keyframes jajkomove {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: calc(100vw - 10px);
+    }
 }

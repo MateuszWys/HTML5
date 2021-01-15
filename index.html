@@ -11,7 +11,7 @@
 			<td>
 				<img id="jajako" src="jajako.jpg">
 				<div id="jajkoPosition" class="jajkoPosition">
-						<span id="jajko" class="jajko">
+						<div class="jajko"></div
 				</div>
 			</td>
 			<td>
@@ -26,7 +26,7 @@
 				</div>
 			</td>
 			<td>
-				<button onclick='moveme();'>dodaj do koszyka</button>
+				<button onclick='moveme1();'>dodaj do koszyka</button>
 			</td>
 		</tr>
 			<tr>
@@ -37,7 +37,7 @@
 				</div>
 			</td>
 			<td>
-				<button onclick='moveme();'>dodaj do koszyka</button>
+				<button onclick='moveme2();'>dodaj do koszyka</button>
 			</td>
 		</tr>
 		</tr>
@@ -49,7 +49,7 @@
 				</div>
 			</td>
 			<td>
-				<button onclick='moveme();'>dodaj do koszyka</button>
+				<button onclick='moveme3();'>dodaj do koszyka</button>
 			</td>
 		</tr>
 		</tr>
@@ -61,23 +61,34 @@
 				</div>
 			</td>
 			<td>
-				<button onclick='moveme();'>dodaj do koszyka</button>
+				<button onclick='moveme4();'>dodaj do koszyka</button>
 			</td>
 		</tr>		
 	</table>
 </div>
-
+<div class="kPosition">
 	<img id="koszyk" style="top: 0px; right: 100%;" src="koszyk.jpg">
 		<div id="koszykPosition" class="koszykPosition">
 				<span id="koszyk" class="koszyk">
 		</div>
+</div>
 </body>
 
 <script>
     function moveme() {
-        document.getElementById("truck").className = "car_move";
-		document.getElementById("trailerContainer").className = "trailer_animation";
-		document.getElementById("package").className = "package_animation";
+        document.getElementById("jajkoPosition").className = "jajkomove";
     }
+    function moveme1() {
+        document.getElementById("truck").className = "car_move";
+    }
+    function moveme2() {
+        document.getElementById("truck").className = "car_move";
+    }
+    function moveme3() {
+        document.getElementById("truck").className = "car_move";
+    }
+    function moveme4() {
+        document.getElementById("truck").className = "car_move";
+    }	
 </script>
 </html>
