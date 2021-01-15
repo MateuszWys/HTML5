@@ -4,14 +4,51 @@
 	<link rel="stylesheet" href="zad9.css">
 </head>
 <body>
+
 <div class="imgPosition">
-	<img id="jajako" src="jajako.jpg">
-	<div id="jajkoPosition" class="jajkoPosition">
-			<span id="jajko" class="jajko">
-	</div>
+	<table>
+		<tr>
+			<td>
+				<img id="jajako" src="jajako.jpg">
+				<div id="jajkoPosition" class="jajkoPosition">
+						<span id="jajko" class="jajko">
+				</div>
+			</td>
+			<td>
+				<button onclick='moveme();'>dodaj do koszyka</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="majonez" src="majonez.jpg">
+				<div id="majonezPosition" class="majonezPosition">
+						<span id="majonez" class="majonez">
+				</div>
+			</td>
+			<td>
+				<button onclick='moveme();'>dodaj do koszyka</button>
+			</td>
+		</tr>
+			<tr>
+			<td>
+				<img id="zeszyt" src="zeszyt.jpg">
+				<div id="zeszytPosition" class="zeszytPosition">
+						<span id="zeszyt" class="zeszyt">
+				</div>
+			</td>
+			<td>
+				<button onclick='moveme();'>dodaj do koszyka</button>
+			</td>
+		</tr>
+	</table>
 </div>
+
+	<img id="koszyk" style="top: 0px; right: 100%;" src="koszyk.jpg">
+		<div id="koszykPosition" class="koszykPosition">
+				<span id="koszyk" class="koszyk">
+		</div>
 </body>
-<button onclick='moveme();'>dodaj do koszyka</button>
+
 <script>
     function moveme() {
         document.getElementById("truck").className = "car_move";
